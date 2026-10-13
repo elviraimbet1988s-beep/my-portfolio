@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Менің Портфолиом</title>
+    <style>
+        /* Жалпы стильдер және түстер гаммасы */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            min-height: 100vh;
+        }
+
+        /* Шапка және навигация */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #fff;
+            padding: 3rem 1rem;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            margin-bottom: 1.5rem;
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+
+        header h1 {
+            margin: 0 0 10px 0;
+            font-size: 2.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            margin: 0;
+        }
+
+        /* Негізгі секциялар */
+        section {
+            padding: 2.5rem;
+            margin: 2rem auto;
+            max-width: 800px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-3px);
+        }
+
+        h2 {
+            color: #667eea;
+            border-bottom: 2px solid #f0f0f0;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+
+        /* Дағдылар тізімі */
+        #skills ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        #skills li {
+            background: #edf2f7;
+            color: #4a5568;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-weight: 500;
+        }
+
+        /* Жобалар карточкасы */
+        .project-card {
+            background: #f8fafc;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            border-radius: 6px;
+            margin-top: 1rem;
+        }
+
+        .project-card h3 {
+            margin-top: 0;
+            color: #2d3748;
+        }
+
+        .project-card a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            margin-right: 10px;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+
+        /* Байланыс бөлімі */
+        #contact ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        #contact li {
+            margin-bottom: 10px;
+        }
+
+        #contact a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+        /* Футер */
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            background: #2d3748;
+            color: #fff;
+            margin-top: 3rem;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="#about">Мен туралы</a>
+            <a href="#skills">Дағдылар</a>
+            <a href="#projects">Жобалар</a>
+            <a href="#contact">Байланыс</a>
+        </nav>
+        <h1>Сәлем! Мен [Сіздің атыңыз]</h1>
+        <p>Бастаушы Веб-девелопер</p>
+    </header>
+
+    <section id="about">
+        <h2>Мен туралы</h2>
+        <p>Мен веб-бағдарламалауды үйреніп жүрмін. VS Code және GitHub сияқты заманауи құралдарды меңгерудемін және өз білімімді күн сайын жетілдіріп отырамын.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Дағдыларым</h2>
+        <ul>
+            <li>HTML & CSS</li>
+            <li>Git & GitHub</li>
+            <li>JavaScript (негіздері)</li>
+        </ul>
+    </section>
+
+    <section id="projects">
+        <h2>Менің жобаларым</h2>
+        <div class="project-card">
+            <h3>Жоба атауы (Мысалы: Лендинг сайт)</h3>
+            <p>Бұл сайт HTML және CSS көмегімен жасалған алғашқы жұмыстарымның бірі.</p>
+            <a href="#" target="_blank">Сайтты көру</a> 
+            <a href="#" target="_blank">GitHub коды</a>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Байланыс</h2>
+        <p>Маған хат жазу немесе жұмыс ұсыну үшін төмендегі байланыс арналарын қолданыңыз:</p>
+        <ul>
+            <li>📧 Email: <a href="mailto:email@example.com">email@example.com</a></li>
+            <li>💻 GitHub: <a href="https://github.com/сіздің_аккаунт" target="_blank">github.com/сіздің_аккаунт</a></li>
+            <li>📱 Telegram: <a href="https://t.me/сіздің_ник" target="_blank">@сіздің_ник</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>©️ 2026 Барлық құқықтар қорғалған.</p>
+    </footer>
+</body>
+</html>
